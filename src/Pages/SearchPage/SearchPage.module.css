@@ -1,0 +1,20 @@
+.container {
+    position: absolute;
+    top: 200px;
+    z-index: -1;
+    margin: 20px 40px;
+}
+
+.container h1 {
+    margin-bottom: 30px;
+}
+
+.container a {
+    color: #440000;
+    font-weight: 600;
+    font-size: 2em;
+    padding: 0px 20px;
+    border: 2px solid #990000;
+    border-radius: 5px;
+    background: #ccc;
+}

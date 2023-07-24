@@ -1,0 +1,320 @@
+.container {
+    position: absolute;
+    top: 200px;
+    width: 100%;
+    z-index: -1;
+}
+
+.container>div {
+    display: flex;
+    flex-direction: column;
+}
+
+.container>hr {
+    margin: 30px 20px;
+}
+
+.title {
+    font-weight: 400;
+    margin-bottom: 20px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.stars i {
+    color: gold;
+    margin-right: 3px;
+}
+
+.stars p {
+    font-size: .8em;
+    color: #aaa;
+    margin-left: 10px;
+}
+
+.imageGuitar {
+    align-self: center;
+    /* border: 1px solid black; */
+    width: 70%;
+    margin-top: 30px;
+}
+
+.price {
+    margin: 0 20px;
+}
+
+.price>p span {
+    color: #c7b300;
+    font-weight: 600;
+}
+
+.price p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.price .oldPrice {
+    text-decoration: line-through;
+    margin: 10px 0px;
+}
+
+.price .newPrice {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.amount {
+    display: flex;
+    align-items: center;
+    margin: 20px 0px;
+    text-transform: uppercase;
+    color: #aaa;
+    font-size: .8em;
+}
+
+.amount p {
+    margin-right: 5px;
+}
+
+.amount select {
+    width: 100px;
+    height: 40px;
+    font-size: 1.5em;
+}
+
+.buy {
+    cursor: pointer;
+    width: 90vw;
+    height: 50px;
+    margin-bottom: 20px;
+    background: #1ffc95;
+    color: #888;
+    font-size: 1.5em;
+    border: none;
+    border-bottom: 4px solid #006d3a;
+    transition: .4s;
+}
+
+.buy:hover {
+    border-radius: 5px;
+    color: #000;
+}
+
+.input {
+    display: none;
+}
+
+.more {
+    display: flex;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.more:active {
+    background: rgb(0, 159, 252);
+}
+
+.listInstallments {
+    display: none;
+    list-style: none;
+    font-size: .8em;
+    margin-left: 10px;
+}
+
+.listInstallments li {
+    margin: 5px 0px;
+}
+
+.input:checked~.more i {
+    transform: rotate(90deg);
+}
+
+.input:checked~.listInstallments {
+    display: block;
+}
+
+.naoSei {
+    margin: 0 20px;
+}
+
+.naoSei i {
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+.__price__ {
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+.__green__ {
+    color: #006d3a;
+}
+
+.simuleFrete {
+    margin: 0 30px;
+}
+
+.simuleFrete input {
+    height: 50px;
+    padding-left: 10px;
+    margin: 20px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.suggestions {
+    display: flex;
+    align-items: center;
+}
+
+h3 {
+    font-size: 1.4em;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.listSuggestions {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    width: 90vw;
+    margin-top: 20px;
+    /* border: 1px solid #000; */
+}
+
+.listSuggestions li {
+    border: 1px solid #000;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+.listSuggestions li .imageSuggestions {
+    margin: 10px 0px;
+    border: 1px solid #000;
+    width: 90%;
+    height: 150px;
+    align-self: center;
+}
+
+.titleSuggestions {
+    font-size: .8em;
+    margin: 0px 5px;
+}
+
+.priceInstallmentsSuggestions,
+.starsSuggestions,
+.priceSuggestions {
+    margin-left: 5px;
+
+}
+
+.priceInstallmentsSuggestions span,
+.priceSuggestions span {
+    font-weight: 700;
+}
+
+.priceInstallmentsSuggestions {
+    font-size: .8em;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+}
+
+.details h3 {
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.details p {
+    margin: 0 10px 20px 10px;
+}
+
+.usersOpnions {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.usersOpnions h3 {
+    align-self: center;
+    margin-bottom: 20px;
+}
+
+.usersOpnions textarea {
+    padding: 10px 0px 0px 10px;
+    width: 80%;
+    height: 50px;
+    align-self: center;
+}
+
+.usersComments {
+    margin-top: 20px;
+    margin: 20px;
+    padding: 30px;
+    background: #bbb;
+    color: #000;
+}
+
+.nameUser {
+    color: #5e0505;
+    margin-bottom: 10px;
+}
+
+.userComment {
+    font-size: .8em;
+}
+
+.moreHideComments {
+    margin: 10px;
+}
+
+.moreHideComments p {
+    color: #006d3a;
+    cursor: pointer;
+}
+
+.listComments,
+.inputCommetshide,
+.hideCommets {
+    display: none;
+}
+
+.inputCommetshide:checked~.listComments {
+    display: block;
+}
+
+.inputCommetshide:checked~.moreHideComments .moreCommets {
+    display: none;
+}
+
+.inputCommetshide:checked~.moreHideComments .hideCommets {
+    display: block;
+    color: red;
+}
+
+@media (min-width: 580px) {
+    .principal {
+        position: relative;
+    }
+
+    .imageGuitar {
+        width: 450px;
+    }
+}
+
+@media (min-width: 800px) {
+    .buy {
+        width: 400px;
+        align-self: center;
+    }
+}
+
+@media (min-width: 900px) {
+    .imageGuitar {
+        margin-left: 30px;
+    }
+}

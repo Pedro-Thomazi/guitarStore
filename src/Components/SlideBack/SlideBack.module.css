@@ -1,0 +1,22 @@
+.main {
+    margin: 0 auto;
+    max-width: 850px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    animation: bgImg 15s linear infinite;
+}
+
+@keyframes bgImg {
+    0% {
+        background-image: url('../../Images/backImages/photo1.webp');
+    }
+
+    50% {
+        background-image: url('../../Images/backImages/photo2.webp');
+    }
+
+    100% {
+        background-image: url('../../Images/backImages/photo3.webp');
+    }
+}

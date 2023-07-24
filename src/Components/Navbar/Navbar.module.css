@@ -1,0 +1,54 @@
+.navbar input {
+    display: none;
+}
+
+.navbar div {
+    display: none;
+    background: rgba(0, 0, 0, 0.39);
+    height: 100vh;
+}
+
+.listLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 0px;
+    list-style: none;
+    background: #ccc;
+    z-index: 1;
+}
+
+.listLinks li a {
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #1f1f1f;
+    width: 100vw;
+}
+
+.listLinks li a:hover {
+    background: #1f1f1f;
+    color: #ccc;
+}
+
+.active {
+    background: #00515C;
+    color: #1f1f1f;
+}
+
+.navbar input:checked + .listContainer { 
+    display: block;
+}
+
+@media (min-width: 800px) {
+    .ourStores {
+        display: none;    
+    }
+}
+
+@media (min-width: 1100px) {
+    .navbar div {
+        display: block;
+        background: none;
+        height: auto;
+    }
+}
